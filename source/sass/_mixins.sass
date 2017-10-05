@@ -1,0 +1,28 @@
+@mixin cta-button
+  background:
+    color: $orange
+  color: $light-gray
+  display: inline-block
+  padding: 1rem 4rem
+  font:
+    size: 20px
+  text-shadow: none
+  box-shadow: 0px 10px 0px $orange-shadow
+  transition: 200ms
+  position: relative
+  top: 0px
+  left: 0px
+  text-transform: uppercase
+
+  &:hover,
+  &:active,
+  &:focus
+    text-decoration: none
+    color: $light-gray
+
+  &:hover
+    color: $white
+
+  &:active
+    top: 5px
+    box-shadow: 0px 0px 0px $orange-shadow

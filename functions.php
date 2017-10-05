@@ -10,6 +10,10 @@ require_once( MBIS_DIR_PATH . '/lib/autoloader.php' );
 Lib\Autoloader::register();
 
 use MBS\Config\Application;
+use MBS\Lib\Helper;
 
 // Start the theme!
 new Application();
+
+// View Helper functions
+$helper = new Helper;
