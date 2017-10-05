@@ -1,0 +1,74 @@
+.callout
+  display: block
+  text-align: center
+
+  &--teal
+    background-color: $teal
+    color: $white
+
+  &--white
+    background-color: $white
+    color: $dark-gray
+
+  &--blue
+    background-color: $blue
+    color: $white
+
+  &--small
+    min-height: 360px
+
+  &--medium
+    min-height: 500px
+
+  &--large
+    min-height: 720px
+
+  &--aging-walker
+    background:
+      image: url("../images/background-aging-walk.png")
+      position: center bottom
+      repeat: no-repeat
+      size: auto
+
+  &--illustrated
+    background:
+      image: url("../images/background-kids-work.png")
+      position: center bottom
+      repeat: no-repeat
+      size: auto
+
+  &__description
+    width: 60%
+    margin: 0 auto
+
+  &__heading
+    font-size: 48px
+    padding: 60px 24px
+
+  &__subheading
+    font-size: 24px
+    padding: 60px 0 36px 0
+
+    &--gray
+      color: $medium-gray
+
+  &__cta
+    @include cta-button
+    margin-top: 36px
+
+@media screen and (max-width: $lg-pixels)
+  .callout
+    &--small
+      min-height: 420px
+
+    &--aging-walker
+      background:
+        image: url("../images/background-aging-walk.png")
+        position: center bottom
+        repeat: no-repeat
+        size: contain
+
+@media screen and (max-width: $md-pixels)
+  .callout
+    &__description
+      width: 90%

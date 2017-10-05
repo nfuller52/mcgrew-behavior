@@ -39,8 +39,9 @@ class Application {
 		wp_enqueue_style( 'mbs-theme-style', MBIS_DIR_URL . '/public/stylesheets/mbs.css', array() );
 
 		// Javascripts
+		wp_enqueue_script( 'mbs-theme-js-popper', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js', array(), '1.0.0', true );
 		wp_enqueue_script( 'mbs-theme-js-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js', array( 'jquery' ), '1.0.0', true );
-		wp_enqueue_script( 'mbs-theme-javascript', MBIS_DIR_URL . '/public/javascripts/mbs-min.js', array( 'jquery' ), '1.0.0', true );
+		//wp_enqueue_script( 'mbs-theme-javascript', MBIS_DIR_URL . '/public/javascripts/mbs-min.js', array( 'jquery' ), '1.0.0', true );
 	}
 
 }
