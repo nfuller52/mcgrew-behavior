@@ -42,5 +42,6 @@
 	</section>
 	<section class="callout callout--blue callout--large callout--illustrated">
 		<h2 class="callout__heading">In Home Support</h2>
+		<?php echo $helper->image_path( 'in-home-support.jpg', array( 'class' => 'callout__image' ) ); ?>
 	</section>
 <?php get_footer(); ?>
