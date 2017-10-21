@@ -6,7 +6,7 @@
 				<div class="col-sm-12 col-md-6 col-lg-5">
 					<h1>We can <span class="brand-underline">help.</span></h1>
 					<p>
-						Teaching independence to the lives of the people you love with reliable, individualized emotional and behavioral therapy.
+						Teaching independence to the people you love with reliable, individualized emotional and behavioral therapy.
 					</p>
 					<a href="javascript:void(0)" class="call-to-action">
 						FIND HELP HERE
