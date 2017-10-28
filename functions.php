@@ -11,9 +11,11 @@ Lib\Autoloader::register();
 
 use MBS\Config\Application;
 use MBS\Lib\Helper;
+use MBS\Lib\PageMetaBox;
 
 // Start the theme!
 new Application();
 
 // View Helper functions
 $helper = new Helper;
+$meta_box = new PageMetaBox( 'navigation-css-meta-box-id', 'MBS Navigation Styles', 'page' );

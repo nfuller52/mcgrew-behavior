@@ -2,9 +2,7 @@ nav.navbar.main-nav
   position: absolute
   width: 100%
   padding: 0 1rem
-
-  .navbar-clear
-    background-color: transparent
+  background-color: transparent
 
   .container
     padding: 0 15px
@@ -12,6 +10,17 @@ nav.navbar.main-nav
   .navbar-brand
     padding-top: 2.48rem
     padding-bottom: 2.48rem
+
+nav.navbar.nav--full-color
+
+nav.navbar.nav--white
+  a
+    color: $white
+
+  a:hover,
+  a:active,
+  a:focus
+    color: darken($teal, 20%)
 
 @media screen and (max-width: $md-pixels)
   nav.navbar.main-nav

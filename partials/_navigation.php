@@ -1,7 +1,19 @@
-<nav class="navbar main-nav navbar-expand-md navbar-clear">
+<?php
+
+	$navbar_color = get_post_meta( get_the_ID(), 'mbs-nav-color', true );
+	$navbar_set   = ( isset( $navbar_color ) && ! empty( $navbar_color ) );
+
+?>
+<nav class="navbar main-nav navbar-expand-md <?php echo ( $navbar_set ? $navbar_color : 'nav--full-color' ) ?>">
 	<div class="container">
 		<a href="<?php echo home_url(); ?>" class="navbar-brand">
-			<?php echo $helper->image_path( 'header-logo-full-color.png', array( 'class' => 'navbar-brand-image' ) ); ?>
+			<?php
+				if ( $navbar_set ) {
+					echo $helper->image_path( 'header-logo-' . $navbar_color . '.png', array( 'class' => 'navbar-brand-image' ) );
+				} else {
+					echo $helper->image_path( 'header-logo-nav--full-color.png', array( 'class' => 'navbar-brand-image' ) );
+				}
+			?>
 		</a>
 		<!-- When we are ready for pages
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navigation-toggle" aria-controls="main-navigation-toggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,4 +23,5 @@
 		</div>
 		-->
 	</div>
+	<a href="/contact">Contact</a>
 </nav>
