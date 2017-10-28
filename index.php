@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+	<?php include( MBIS_DIR_PATH . '/partials/_navigation.php' ); ?>
 	<div class="container">
 		<?php
             if (have_posts()):

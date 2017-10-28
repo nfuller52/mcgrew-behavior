@@ -11,4 +11,3 @@
         <?php wp_head(); ?>
     </head>
 <body <?php body_class(); ?>>
-    <?php include( MBIS_DIR_PATH . '/partials/_navigation.php' ); ?>

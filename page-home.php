@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+	<?php include( MBIS_DIR_PATH . '/partials/_navigation.php' ); ?>
 	<section class="jumbotron-fluid hero">
 		<div class="container">
 			<div class="row">
