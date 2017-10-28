@@ -23,5 +23,4 @@
 		</div>
 		-->
 	</div>
-	<a href="/contact">Contact</a>
 </nav>
